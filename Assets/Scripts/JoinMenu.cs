@@ -14,6 +14,7 @@ public class JoinMenu : MonoBehaviour
 
     public void JoinRoom()
     {
+        NetworkManager.instance.ChangeNickname(GroupName.text);
         NetworkManager.instance.JoinRoom(RoomName.text);
     }
 }
